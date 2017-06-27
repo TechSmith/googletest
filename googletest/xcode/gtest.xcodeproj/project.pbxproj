@@ -1044,7 +1044,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF20E30E07400294801 /* FrameworkTarget.xcconfig */;
 			buildSettings = {
+<<<<<<< HEAD
 				CLANG_ENABLE_OBJC_WEAK = YES;
+=======
+				CLANG_CXX_LIBRARY = "libc++";
+>>>>>>> Use libc++
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1067,7 +1071,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF20E30E07400294801 /* FrameworkTarget.xcconfig */;
 			buildSettings = {
+<<<<<<< HEAD
 				CLANG_ENABLE_OBJC_WEAK = YES;
+=======
+				CLANG_CXX_LIBRARY = "libc++";
+>>>>>>> Use libc++
 				COMBINE_HIDPI_IMAGES = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1090,12 +1098,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF10E30E07400294801 /* DebugProject.xcconfig */;
 			buildSettings = {
+<<<<<<< HEAD
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				ENABLE_TESTABILITY = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
+=======
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+>>>>>>> Use libc++
 			};
 			name = Debug;
 		};
@@ -1103,10 +1115,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF40E30E07400294801 /* ReleaseProject.xcconfig */;
 			buildSettings = {
+<<<<<<< HEAD
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+=======
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+>>>>>>> Use libc++
 			};
 			name = Release;
 		};
