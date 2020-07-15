@@ -26,14 +26,18 @@ GMOCK_DIR = ..
 # Where to find user code.
 USER_DIR = ../test
 
+
+ARCH="arm64"
+SYSROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk"
+
 # Flags passed to the preprocessor.
 # Set Google Test and Google Mock's header directories as system
 # directories, such that the compiler doesn't generate warnings in
 # these headers.
-CPPFLAGS += -isystem $(GTEST_DIR)/include -isystem $(GMOCK_DIR)/include
+CPPFLAGS += -isystem $(GTEST_DIR)/include -isystem $(GMOCK_DIR)/include -arch ${ARCH} -isysroot ${SYSROOT}
 
 # Flags passed to the C++ compiler.
-CXXFLAGS += -g -Wall -Wextra -pthread
+CXXFLAGS += -g -Wall -Wextra -pthread -arch ${ARCH} -isysroot ${SYSROOT}
 
 # All tests produced by this Makefile.  Remember to add new tests you
 # created to the list.
